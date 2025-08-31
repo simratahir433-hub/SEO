@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+<h2>Personal Info</h2>
+<form action="submit.php" method="post">
+    First name: <input type="text" name="fname" required><br><br>
+    Last name: <input type="text" name="lname"><br><br>
+    Email: <input type="email" name="email" required><br><br>
+    Mobile no.: <input type="tel" name="mobile" pattern="[0-9]{11}" placeholder="03001234567" required><br><br>
+    Date: <input type="date" name="dob"><br><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+</body>
+</html>
