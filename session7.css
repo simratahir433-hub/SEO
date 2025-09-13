@@ -1,0 +1,16 @@
+body{
+    color: brown;
+    font-family: cursive;
+}
+body a{
+    color:blue;
+}
+body p{
+    color: green;
+}
+section p{
+    color:black;
+}
+section p span{
+    color:orange;
+}
