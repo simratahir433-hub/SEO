@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+        }
+        .box{
+            width: 270px;
+            height: 150px;
+            margin-top: 45px;
+            margin-left: 30px;
+            background-color: crimson;
+            border: 2px solid rgb(255, 255, 255);
+            animation-name: Simra;
+            /* animation-delay: 4s; */
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            /* (start from slowly implementation & ends at fast implementation) */
+                /* animation-timing-function: ease-in; */
+            /* (start from fast implementation & ends at slow implementation) */
+                animation-timing-function: ease-out;
+                box-shadow: 4px 3px 6px orange;
+        }
+        @keyframes Simra{
+            0%{
+                transform: translateX(0);
+                /* transform: rotate(0deg); */
+            }
+            50%{
+                transform: translateX(1000px);
+                /* transform: rotate(180deg); */
+            }
+            100%{
+                transform: translateX(500px);
+                /* transform: rotate(360deg); */
+            }
+
+            from{
+                background-color: crimson;
+                width: 270px;
+                height: 150px;
+                opacity: 0;
+            }
+            to{
+                background-color: rgb(120, 153, 224);
+                width: 500px;
+                height: 400px;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Animations in CSS</h1>
+    </div>
+    
+</body>
+</html>
